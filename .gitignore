@@ -22,7 +22,7 @@ $RECYCLE.BIN/
 # Operating System Files
 # =========================
 
-
+build
 .gradle
 .idea
 gradlew
