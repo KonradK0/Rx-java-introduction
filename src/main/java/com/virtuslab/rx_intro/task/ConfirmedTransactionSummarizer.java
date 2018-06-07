@@ -42,9 +42,9 @@ class ConfirmedTransactionSummarizer {
     Single<BigDecimal> summarizeConfirmedTransactions() {
         Observable<Confirmation> zippedTransConf = Observable.zip(transactions.get(), confirmations.get(), (transaction, confirmation) -> new Confirmation(transaction.transactionId, confirmation.isConfirmed));
         return zippedTransConf
-                .onErrorResumeNext(Observable.error(new SummarizationException("Booom")))
                 .filter(c -> c.isConfirmed)
-                .reduce(BigDecimal.ZERO, (sum, confirmation) -> sum.add(findTransactionOfId(confirmation.transactionId).value));
+                .reduce(BigDecimal.ZERO, (sum, confirmation) -> sum.add(findTransactionOfId(confirmation.transactionId).value))
+                .onErrorResumeNext(e -> Single.error(new SummarizationException(e.getMessage())));
 //        return Single.just(sum);
     }
 
