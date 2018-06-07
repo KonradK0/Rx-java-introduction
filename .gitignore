@@ -21,3 +21,10 @@ $RECYCLE.BIN/
 # =========================
 # Operating System Files
 # =========================
+
+
+.gradle
+.idea
+gradlew
+gradlew.bat
+*.iml

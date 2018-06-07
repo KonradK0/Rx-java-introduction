@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.virtuslab.rx_intro.task.ConfirmedTransactionSummarizerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-06-07T13:09:11" hostname="KKomp" time="0.128">
+  <properties/>
+  <testcase name="shouldSummarizeAllTransactions" classname="com.virtuslab.rx_intro.task.ConfirmedTransactionSummarizerTest" time="0.122"/>
+  <testcase name="shouldSummarizeConfirmedTransactions" classname="com.virtuslab.rx_intro.task.ConfirmedTransactionSummarizerTest" time="0.004"/>
+  <testcase name="shouldWrapErrorIntoException" classname="com.virtuslab.rx_intro.task.ConfirmedTransactionSummarizerTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
